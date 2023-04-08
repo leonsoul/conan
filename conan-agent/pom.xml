@@ -87,9 +87,9 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
+<!--                        <goals>-->
+<!--                            <goal>repackage</goal>-->
+<!--                        </goals>-->
                     </execution>
                 </executions>
             </plugin>

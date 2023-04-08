@@ -2,44 +2,43 @@
   <div class="home">
     <el-row :gutter="20">
       <el-col :span="8">
-        <el-card shadow="hover" class="mgb20" style="height:272px;">
-          <div class="user-info">
+        <!-- <el-card shadow="hover" class="mgb20" style="height:272px;"> -->
+          <!-- <div class="user-info">
             <div class="user-avator icon-Git iconfont">
-              <img
-                src="../assets/images/conan.png"
+              <div
                 style="opacity:0.2;margin-left: 102px;margin-top: -41px;"
                 alt
-              />
-            </div>
+              /> -->
+            <!-- </div>
             <div class="user-info-cont">
               <div class="user-info-name">Hi {{ name }},Welcome back</div>
               <br />
               <div>以下数据从2020/9/9开始统计</div>
             </div>
-          </div>
-          <div class="user-info-list">
+          </div> -->
+          <!-- <div class="user-info-list">
             本次登录时间：
             <span>{{ timeId }}</span>
           </div>
           <div class="user-info-list">
             上次登录地点：
             <span>北京</span>
-          </div>
-        </el-card>
-        <el-card shadow="hover" class="leftCont common">
-          <el-row>
-            <el-col :span="24">
-              <div class="grid-contents bg-purple-dark">
+          </div> -->
+        <!-- </el-card> -->
+        <!-- <el-card shadow="hover" class="leftCont common"> -->
+          <!-- <el-row> -->
+            <!-- <el-col :span="24"> -->
+              <!-- <div class="grid-contents bg-purple-dark">
                 <i class="iconfont icon-renyuan grid-con-icon"></i>
                 <div class="grid-cont-right">
                   <div>平台活跃用户数</div>
                   <div class="grid-num">{{ homeData.user_count }}</div>
                 </div>
-              </div>
+              </div> -->
             </el-col>
-          </el-row>
-        </el-card>
-        <el-card shadow="hover" class="common">
+          <!-- </el-row> -->
+        <!-- </el-card> -->
+        <!-- <el-card shadow="hover" class="common">
           <el-row>
             <el-col :span="24">
               <div class="grid-contents bg-purple-dark">
@@ -52,7 +51,7 @@
             </el-col>
           </el-row>
         </el-card>
-      </el-col>
+      </el-col> -->
       <el-col :span="16">
         <el-row :gutter="10" class="mgb20">
           <el-col :span="6">
@@ -100,7 +99,7 @@
             </el-card>
           </el-col>
         </el-row>
-        <el-row>
+        <!-- <el-row>
           <el-col :span="18">
             <el-card style="height:406px">
               <div>
@@ -113,10 +112,10 @@
                   <div ref="line" style="min-width:599px;"></div>
                 </div>
               </div>
-            </el-card>
-          </el-col>
-          <el-col :span="6" class="versionBox">
-            <div class="clearfix">
+            </el-card> -->
+          <!-- </el-col> -->
+          <!-- <el-col :span="6" class="versionBox"> -->
+            <!-- <div class="clearfix">
               <span>当前版本V3.0</span>
             </div>
             <div class="box-body">
@@ -124,17 +123,17 @@
                 增加数据中心、开放中心模块，已和PTS压测平台打通提供线上真实压力模型与压测数据，实现全链路自动化压测，目前已在大班业务试运行
               </p>
               <p class="text-muted">
-                柯南流量回放平台是一个将线上环境真实流量复制并用于自动回归测试的平台，帮助大家提升测试质量，提高回归效率，并已经和发布系统联动来自动进行服务端的接口回归。如果有感兴趣的，可以联系质量研发部-刘劲松老师了解。
+                流量回放平台是一个将线上环境真实流量复制并用于自动回归测试的平台，帮助大家提升测试质量，提高回归效率，并已经和发布系统联动来自动进行服务端的接口回归。如果有感兴趣的，可以联系质量研发部-刘劲松老师了解。
               </p>
               <a
                 href="http://app.xesv5.com/ep-docs/CONAN/"
                 target="_blank"
                 class="btn btn-sm btn-outline rounded b-success"
                 >阅读更多
-              </a>
-            </div>
-          </el-col>
-        </el-row>
+              </a> -->
+            <!-- </div> -->
+          <!-- </el-col> -->
+        <!-- </el-row> -->
       </el-col>
     </el-row>
     <el-row :gutter="20">
@@ -164,7 +163,7 @@
         </el-card>
       </el-col>
     </el-row>
-    <el-row :gutter="20">
+    <!-- <el-row :gutter="20">
       <el-col :span="16">
         <el-card shadow="hover">
           <div slot="header" class="clearfix">
@@ -176,8 +175,8 @@
             <div ref="productLineLine"></div>
           </div>
         </el-card>
-      </el-col>
-      <el-col :span="8">
+      </el-col> -->
+      <!-- <el-col :span="8">
         <el-card shadow="hover">
           <div slot="header" class="clearfix">
             <span
@@ -191,8 +190,8 @@
             </span>
             <br />
             <small>欢迎留下你的意见</small>
-          </div>
-          <div class="box-body">
+          </div> -->
+          <!-- <div class="box-body">
             <div class="block" style="overflow-y: auto;height: 300px;">
               <el-timeline>
                 <el-timeline-item
@@ -209,10 +208,10 @@
                   </el-card>
                 </el-timeline-item>
               </el-timeline>
-            </div>
-          </div>
-        </el-card>
-      </el-col>
+            </div> -->
+          <!-- </div> -->
+        <!-- </el-card> -->
+      <!-- </el-col>
     </el-row>
     <el-dialog
       title="发布留言"
@@ -228,13 +227,13 @@
         placeholder="请输入内容"
         show-word-limit
         v-model="msgContent"
-      >
-      </el-input>
-      <span slot="footer" class="dialog-footer">
+      > -->
+      <!-- </el-input> -->
+      <!-- <span slot="footer" class="dialog-footer">
         <el-button @click="messageDialogVisible = false">取 消</el-button>
         <el-button type="primary" @click="submitMessage">确 定</el-button>
       </span>
-    </el-dialog>
+    </el-dialog> -->
   </div>
 </template>
 

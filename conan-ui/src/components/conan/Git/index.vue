@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
   name: 'ConanGit',
   data() {
@@ -17,5 +17,5 @@ export default {
       window.open(this.url)
     }
   }
-}
-</script>
+} -->
+<!-- </script> -->

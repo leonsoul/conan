@@ -2,7 +2,7 @@
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://10.20.96.26:3306/conangraydb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://192.168.88.31:3306/conangraydb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
       password: 1WtFLD+NjkDAboHex6veopxdBm5RknEn59EE+N3RMYkjtN4yOIV8v4+3aLF1vqNeIKnapOe4U03JBTi+bIoAZA==
       public-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANsWW73DEl2CvtErLWWFI5dlfqsen+vNywQZF+Waz5wCWhSkXzbkGNk5Dkv2d9S0AcdpztB/Ymwu9J1nkIsZS1kCAwEAAQ==
   redis:

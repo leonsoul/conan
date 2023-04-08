@@ -9,7 +9,7 @@ conan:
   # 实例演示开关
   demoEnabled: true
   # 文件路径 示例（ Windows配置D:/conan/uploadPath，Linux配置 /home/conan/uploadPath）
-  profile: /home/conan/uploadPat
+  profile: /Users/bene/Desktop/Bene/conan/uploadPat
   # 获取ip地址开关
   addressEnabled: false
   # 验证码类型 math 数组计算 char 字符验证
@@ -50,9 +50,10 @@ spring:
       # 主库数据源
       master:
         enabled: true
-        url: jdbc:mysql://127.0.0.1:3306/conandb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
-        username: 
-        password: 
+        url: jdbc:mysql://192.168.88.31:3306/conandb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
+        #        url: jdbc:mysql://192.168.88.31:3306/conandb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT
+        username: conan
+        password: CoNan1234@
       # 从库数据源
       slave:
         # 从数据源开关/默认关闭
@@ -108,7 +109,9 @@ spring:
   #      ddl-auto: update # 自动根据实体类定义更新数据库表结构
 
   kafka:
+    bootstrap-servers: 192.168.88.31:9092
     consumer:
+      group-id: conan-agent-local
       enable-auto-commit: true
       auto-offset-reset: latest
       max-poll-records: 1 # 每次只消费一条消息
@@ -138,9 +141,10 @@ spring:
     enabled: false
 
   redis:
+    host: 127.0.0.1
     port: 6379 # Redis服务器连接端口
     timeout: 50000 # 连接超时时间（毫秒）
-    password: 123456
+#    password: CoNan1234@
     jedis:
       pool:
         max-active: 100 # 连接池最大连接数（使用负值表示没有限制）
@@ -194,7 +198,10 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
-
+system:
+  env: LOCAL
+  redis:
+    cacheTime: 14 # 录制redis数据的过期时间为14天  14*24*60*60 S
 security:
   basic:
     enabled: false
